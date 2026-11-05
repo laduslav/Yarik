@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ярик: Побег с уроков</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="game-shell">
+    <header>
+      <div>
+        <p class="eyebrow">Новая история</p>
+        <h1>Ярик: Побег с уроков</h1>
+      </div>
+      <div class="score-box">Очки <strong id="score">0</strong></div>
+    </header>
+
+    <section class="game-wrap" id="gameWrap" aria-label="Игровое поле">
+      <div class="road" id="road">
+        <div class="lane-line lane-line-1"></div>
+        <div class="lane-line lane-line-2"></div>
+        <div class="player" id="player" aria-label="Ярик"><span>Я</span></div>
+      </div>
+
+      <div class="start-screen" id="startScreen">
+        <div class="badge">КЛАССНЫЙ ЧЕЛЛЕНДЖ</div>
+        <h2>Помоги Ярику!</h2>
+        <p>Уворачивайся от тетрадей и собирай звёзды.</p>
+        <button id="startButton">Начать игру</button>
+        <p class="controls">← → или A D</p>
+      </div>
+
+      <div class="game-over hidden" id="gameOver">
+        <h2>Урок закончился!</h2>
+        <p>Твой результат: <strong id="finalScore">0</strong></p>
+        <button id="restartButton">Играть ещё</button>
+      </div>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
